@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Chickens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<script src="{{ url_for('static', filename='marquee-script.js') }}"></script>
+
+<body>
+
+    <audio src="{{ url_for('static', filename='onlyindreams.mp3') }}" autoplay loop>
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="container">
+        <h1>Spinning Chickens</h1>
+
+        <marquee id="randomMarquee">Good job having JavaScript disabled ;)</marquee>
+
+        <div class="nav-bar">
+            <a href="{{ url_for('index') }}">Home</a> |
+            <a href="{{ url_for('about') }}">About</a> |
+            <a href="{{ url_for('contact') }}">Contact</a> |
+            <a href="{{ url_for('links') }}">Links</a>
+        </div>
+
+
+        <img src="{{ url_for('static', filename='spinningchicken.gif') }}" alt="Spinning chicken" width="100" style="margin-top: 20px;">
+
+        <!-- Display Notes -->
+        <div id="notes">
+            {% for note in notes %}
+                <div>{{ note }}</div>
+            {% endfor %}
+        </div>
+
+        <!-- Form to submit a note -->
+        <form action="/submit" method="post">
+            <textarea name="note" rows="4" cols="50" placeholder="Write your note here..."></textarea><br>
+            <input type="submit" value="Submit Note">
+        </form>
+
+        <div class="footer">
+            <p>&copy; 2024 NorthernChicken. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

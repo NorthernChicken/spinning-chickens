@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Chickens - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<script src="marquee-script.js"></script>
+<body>
+
+    <div id="container">
+        <h1>Spinning Chickens</h1>
+
+        <marquee id="randomMarquee">Good job having JavaScript disabled ;)</marquee>
+
+        <div class="nav-bar">
+            <a href="{{ url_for('index') }}">Home</a> |
+            <a href="{{ url_for('about') }}">About</a> |
+            <a href="{{ url_for('contact') }}">Contact</a> |
+            <a href="{{ url_for('links') }}">Links</a>
+        </div>
+
+        <p style="padding: 20px;"> <a href="junk.html">Junk folder</a> </p>
+
+        <div class="footer">
+            <p>&copy; 2024 NorthernChicken. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
