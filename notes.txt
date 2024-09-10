@@ -7,3 +7,25 @@ hey!
 test?
 tor test
 I (AJ) left this note using Tor browser on 21:08, 9/8/24
+2nd test at 21:24
+3rd test 21:37
+Hello what is this random song
+OVERTHROW THE BOURGEOISIE
+hehehehehehe
+Test with signatures. - - North
+Test leaving sig field blank - 
+test2North
+blank
+hello North
+hello north
+hello - North
+hello - 
+hello - North
+hello - <i>Anonymous</i>
+hello - North
+hi - <i>north</i>
+test with time. - <i>north</i>, <i>2024-09-09 17:09:24</i>
+test with anon time. - <i>Anonymous</i>, <i>2024-09-09 17:09:41</i>
+test html update - <i>north</i>, <i>2024-09-09 17:10:21</i>
+<b>BOLD</b> - <i>north</i>, <i>2024-09-09 17:11:25</i>
+<b>all note bodies are now bold.</b> - <i>north</i>, <i>2024-09-09 17:11:41</i>

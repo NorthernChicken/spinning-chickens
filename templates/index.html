@@ -32,13 +32,15 @@
         <!-- Display Notes -->
         <div id="notes">
             {% for note in notes %}
-                <div>{{ note }}</div>
+                <div>{{ note | safe }}</div>
             {% endfor %}
         </div>
+
 
         <!-- Form to submit a note -->
         <form action="/submit" method="post">
             <textarea name="note" rows="4" cols="50" placeholder="Write your note here..."></textarea><br>
+            <textarea name="sign" rows="1" cols="50" placeholder="Sign here, leave blank for anonymous..."></textarea><br>
             <input type="submit" value="Submit Note">
         </form>
 
