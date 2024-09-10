@@ -29,3 +29,4 @@ test with anon time. - <i>Anonymous</i>, <i>2024-09-09 17:09:41</i>
 test html update - <i>north</i>, <i>2024-09-09 17:10:21</i>
 <b>BOLD</b> - <i>north</i>, <i>2024-09-09 17:11:25</i>
 <b>all note bodies are now bold.</b> - <i>north</i>, <i>2024-09-09 17:11:41</i>
+<b>hello this is a long note that fills the maximum note length. hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohel</b> - <i>north north north no</i>, <i>2024-09-09 17:39:50</i>

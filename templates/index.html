@@ -29,20 +29,19 @@
 
         <img src="{{ url_for('static', filename='spinningchicken.gif') }}" alt="Spinning chicken" width="100" style="margin-top: 20px;">
 
+        <!-- Submit a note -->
+        <form action="/submit" method="post">
+            <textarea name="note" rows="4" cols="50" placeholder="Write your note here..." maxlength="500"></textarea><br>
+            <textarea name="sign" rows="1" cols="50" placeholder="Sign here, leave blank for anonymous..." maxlength="20"></textarea><br>
+            <input type="submit" value="Submit Note">
+        </form>
+
         <!-- Display Notes -->
         <div id="notes">
-            {% for note in notes %}
+            {% for note in notes|reverse %}
                 <div>{{ note | safe }}</div>
             {% endfor %}
         </div>
-
-
-        <!-- Form to submit a note -->
-        <form action="/submit" method="post">
-            <textarea name="note" rows="4" cols="50" placeholder="Write your note here..."></textarea><br>
-            <textarea name="sign" rows="1" cols="50" placeholder="Sign here, leave blank for anonymous..."></textarea><br>
-            <input type="submit" value="Submit Note">
-        </form>
 
         <div class="footer">
             <p>&copy; 2024 NorthernChicken. All Rights Reserved.</p>
