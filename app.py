@@ -21,7 +21,8 @@ def index():
 def submit():
     current_datetime = datetime.now()
     formatted_datetime = f"<i>{current_datetime.strftime('%Y-%m-%d %H:%M:%S')}</i>"
-    note = f"<b>{request.form['note']}</b>"
+    note = request.form['note'].strip().replace("\n", " ").replace("\r", " ")
+    note = f"<b>{note}</b>"
     sign = request.form['sign'].strip()
     if not sign:
         signature = "<i>Anonymous</i>"
