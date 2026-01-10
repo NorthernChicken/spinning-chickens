@@ -5,9 +5,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-NOTES_FILE = 'notes.txt'
-if not os.path.exists(NOTES_FILE):
-    open(NOTES_FILE, 'w').close()
+NOTES_FILE = "data/notes.txt"
 
 @app.route('/')
 def index():
